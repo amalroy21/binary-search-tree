@@ -18,20 +18,6 @@ public class Main {
 			bstImpl.deleteNode(n);
 			bstImpl.traverseBst();
 		}
-		
-		/*bstImpl.traverseBst();
-		bstImpl.deleteNode(12);
-		bstImpl.traverseBst();
-		bstImpl.deleteNode(98);
-		bstImpl.traverseBst();
-		bstImpl.deleteNode(9);
-		bstImpl.traverseBst();
-		bstImpl.deleteNode(68);
-		bstImpl.traverseBst();
-		bstImpl.deleteNode(46);
-		bstImpl.traverseBst();
-		bstImpl.deleteNode(101);
-		bstImpl.traverseBst();*/
 	}
 	
 	static int[] getNodesToDelete(String list) {
