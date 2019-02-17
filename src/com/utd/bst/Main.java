@@ -8,7 +8,7 @@ import com.utd.bst.util.ReadPropertyFile;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Properties prop = ReadPropertyFile.readProperties("config.properties");
 		BstImpl bstImpl = new BstImpl(prop.getProperty("List"));
 		int[] nodetodelete = getNodesToDelete(prop.getProperty("DeleteNodes"));
@@ -24,7 +24,6 @@ public class Main {
 		String[] strList = list.split(",");
 		int[] deleteList = new int[strList.length];
 		int i = 0;
-		
 		while(i<strList.length) {
 			deleteList[i] = Integer.parseInt(strList[i++]);
 		}
