@@ -67,7 +67,8 @@ public class BstImpl {
 			//If left child is null
 			else if(deletedNode.left == null) {
 				replacedNode = deletedNode.right;
-				deletedNode.val = replacedNode.val;
+				replaced = replacedNode.val;
+				deletedNode.val = replaced;
 				deletedNode.right = replacedNode.right;
 				deletedNode.left = replacedNode.left;
 			}
@@ -75,7 +76,8 @@ public class BstImpl {
 			//If right child is null
 			else if(deletedNode.right == null) {
 				replacedNode = deletedNode.left;
-				deletedNode.val = replacedNode.val;
+				replaced = replacedNode.val;
+				deletedNode.val = replaced;
 				deletedNode.left = replacedNode.left;
 				deletedNode.right = replacedNode.right;
 			}
@@ -154,13 +156,14 @@ public class BstImpl {
 	}
 	
 	public void traverseBst() {
-		System.out.println("");
+		
 		System.out.println("-----Binary Search Tree Inorder Traversal-----");
 		if(root!=null) {
 			inordertraverseBst(root);
 		}else {
 			System.out.println("Empty Binary Search Tree!");
 		}
+		System.out.println("");
 	}
 	
 	public void inordertraverseBst(Node node) {
