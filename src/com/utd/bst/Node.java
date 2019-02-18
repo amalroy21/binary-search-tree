@@ -11,5 +11,11 @@ public class Node {
 		this.left = null;
 		this.right = null;
 	}
-
+	
+	public boolean isLeaf() {
+		if(this.left == null && this.right == null) {
+			return true;
+		}
+		return false;
+	}
 }
